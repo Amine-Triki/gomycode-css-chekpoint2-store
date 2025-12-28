@@ -1,0 +1,178 @@
+body {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Zalando Sans Expanded", sans-serif;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #f8f8f8;
+  gap: 5px;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+nav img {
+  height: 80px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 8px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+nav ul li a:hover,
+nav a:active {
+  color: #007bff;
+}
+nav span {
+  cursor: pointer;
+}
+#home {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 50px 20px;
+  flex-wrap: wrap;
+}
+
+h2 {
+  font-size: 48px;
+  margin-bottom: 10px;
+  color: #222;
+  font-weight: bolder;
+}
+h2 span {
+  color: #d95b36;
+}
+  .hero-text {
+    margin-bottom: 30px;
+  }
+#home p {
+  font-size: 32px;
+  max-width: 800px;
+  line-height: 1.6;
+  color: #3c3c3c;
+}
+#home a {
+  text-decoration: none;
+  background-color: #d95b36;
+  color: white;
+  padding: 15px 30px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+#home a:hover {
+  background-color: #bf4e2c;
+}
+
+#home img {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.product-card img {
+  height: 200px;
+  object-fit: cover;
+}
+
+main {
+  text-align: center;
+  background-color: #ebebeb;
+  padding: 40px;
+}
+main #products > p {
+  font-size: 28px;
+  color: #3a3a3a;
+  margin-bottom: 20px;
+}
+main .product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin-top: 30px;
+}
+.product-card {
+  background-color: white;
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+.product-card p {
+  max-width: 200px;
+  margin: 0 auto;
+}
+
+.f-card {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+button {
+  background-color: #d95b36;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+button:hover {
+  background-color: #bf4e2c;
+}
+
+footer{
+  text-align: center;
+  padding: 20px;
+  background-color: #f8f8f8;
+  color: #666;
+  margin-top: 40px;
+}
+@media (max-width: 600px) {
+  body {
+    font-size: 12px;
+  }
+
+  nav img {
+    height: 40px;
+  }
+  .logo h1 {
+    font-size: 13px;
+  }
+  #home {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
+  .hero-text {
+    margin-bottom: 30px;
+  }
+  h2 {
+    font-size: 20px;
+  }
+  #home p {
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+  #home img {
+    max-height: 300px;
+  }
+  main #products > p {
+  font-size: 18px;
+
+}
+}
