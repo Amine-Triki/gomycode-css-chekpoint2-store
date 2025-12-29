@@ -38,13 +38,6 @@ nav a:active {
 nav span {
   cursor: pointer;
 }
-#home {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 50px 20px;
-  flex-wrap: wrap;
-}
 
 h2 {
   font-size: 48px;
@@ -54,26 +47,6 @@ h2 {
 }
 h2 span {
   color: #d95b36;
-}
-  .hero-text {
-    margin-bottom: 30px;
-  }
-#home p {
-  font-size: 32px;
-  max-width: 800px;
-  line-height: 1.6;
-  color: #3c3c3c;
-}
-#home a {
-  text-decoration: none;
-  background-color: #d95b36;
-  color: white;
-  padding: 15px 30px;
-  border-radius: 5px;
-  font-weight: bold;
-}
-#home a:hover {
-  background-color: #bf4e2c;
 }
 
 #home img {
@@ -85,6 +58,7 @@ h2 span {
 .product-card img {
   height: 200px;
   object-fit: cover;
+  margin: 0 auto;
 }
 
 main {
@@ -135,7 +109,7 @@ button:hover {
   background-color: #bf4e2c;
 }
 
-footer{
+footer {
   text-align: center;
   padding: 20px;
   background-color: #f8f8f8;
@@ -153,26 +127,18 @@ footer{
   .logo h1 {
     font-size: 13px;
   }
-  #home {
-    flex-direction: column;
-    text-align: center;
-    gap: 10px;
-  }
+
   .hero-text {
     margin-bottom: 30px;
   }
   h2 {
     font-size: 20px;
   }
-  #home p {
-    font-size: 14px;
-    margin-bottom: 20px;
-  }
+
   #home img {
     max-height: 300px;
   }
   main #products > p {
-  font-size: 18px;
-
-}
+    font-size: 18px;
+  }
 }
